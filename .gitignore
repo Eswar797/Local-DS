@@ -15,22 +15,8 @@ build/
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
-# Model files (too large for GitHub)
-*.pth
-*.pt
-*.h5
-*.ckpt
-artifacts/
-
-# Data folders
+# Images folder (too large for GitHub - see README for setup instructions)
 images/
-data/
-dataset/
-
-# CSV files (labels and data)
-*.csv
-*.xlsx
-labels.csv
 
 # Logs
 *.log

@@ -22,13 +22,40 @@ pip install torch torchvision timm pillow numpy scikit-learn gradio tqdm
 
 ## 🚀 Quick Start
 
-1. **Prepare your trained models**:
-   - Place `best_model1_deit_tiny.pth` in the project root
-   - Place `best_model1_mobilevit_xxs.pth` in the project root
+### Prerequisites
 
-2. **Organize your images**:
-   - Create an `images/` folder
-   - Add your image dataset (the UI will auto-load them)
+Install required packages:
+```bash
+pip install torch torchvision timm pillow numpy scikit-learn gradio tqdm
+```
+
+### Setup Instructions
+
+1. **Clone the repository**:
+```bash
+git clone <your-repo-url>
+cd <repo-name>
+```
+
+2. **Add your image dataset**:
+   - Create an `images/` folder in the project root
+   - Add your image dataset to this folder
+   - The UI will automatically load and index all images on startup
+   
+   **Note**: The `images/` folder is excluded from version control due to size. You need to add your own images.
+   
+   **Expected structure**:
+   ```
+   project-root/
+   ├── images/
+   │   ├── image1.jpg
+   │   ├── image2.jpg
+   │   └── ... (your images)
+   ├── best_model1_deit_tiny.pth
+   ├── best_model1_mobilevit_xxs.pth
+   ├── image_understanding_ui.py
+   └── ...
+   ```
 
 3. **Run the UI**:
 ```bash
@@ -38,6 +65,7 @@ python image_understanding_ui.py
 4. **Access the interface**:
    - The browser will automatically open at `http://127.0.0.1:7860`
    - Wait for the gallery to load (progress shown in console)
+   - Both models will analyze all images (takes ~2-3 minutes for 600 images)
 
 ## 🎯 Supported Categories
 
