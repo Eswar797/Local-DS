@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Model files (too large for GitHub)
+*.pth
+*.pt
+*.h5
+*.ckpt
+artifacts/
+
+# Data folders
+images/
+data/
+dataset/
+
+# CSV files (labels and data)
+*.csv
+*.xlsx
+labels.csv
+
+# Logs
+*.log
+ui_output.log
+ui_error.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Gradio cache
+gradio_cached_examples/
+flagged/
+
+# Temporary files
+*.tmp
+*.temp
+
